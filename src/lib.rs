@@ -27,6 +27,10 @@ fn lang_start(main: *const u8, _argc: isize, _argv: *const *const u8) -> isize {
     0
 }
 
+#[no_mangle]
+pub extern "C" fn SystemInit() {
+}
+
 #[lang = "panic_fmt"]
 #[no_mangle]
 pub extern "C" fn panic_fmt(details: ::core::fmt::Arguments, file: &'static str, line: u32) -> ! {
