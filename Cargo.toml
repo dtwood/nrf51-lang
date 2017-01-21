@@ -3,6 +3,7 @@ name = "nrf51-lang"
 version = "0.1.0"
 authors = ["David Wood <devel@dtwood.uk>"]
 build = "build.rs"
+license = "ISC"
 
 [dependencies]
 nrf51-hardware = { git = "https://github.com/dtwood/nrf51-hardware" }
